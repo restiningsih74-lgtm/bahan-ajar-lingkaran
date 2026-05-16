@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CP dan ATP</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- CSS Kustom -->
+  <style>
+    body {
+      background: linear-gradient(to right, #2B4D5F, #2F6E78);
+      color: white;
+    }
+
+    .custom-navbar {
+      background-color: #2B4D5F;
+    }
+
+    .dropdown-menu {
+      background-color: #2B4D5F;
+    }
+
+    .dropdown-menu a.dropdown-item {
+      color: white;
+    }
+
+    .dropdown-menu a.dropdown-item:hover {
+      background-color: #3a697a !important;
+    }
+
+    .section-content {
+      padding-top: 140px;
+      padding-bottom: 50px;
+    }
+
+    .section-content h2 {
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: #3a697a;
+      color: white;
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">MathCircleFun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cp-tp.html">CP dan TP</a></li>
+          <li class="nav-item"><a class="nav-link" href="peta-konsep.html">Peta Konsep</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Materi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="pembelajaran1.html">Pembelajaran 1</a></li>
+              <li><a class="dropdown-item" href="pembelajaran2.html">Pembelajaran 2</a></li>
+              <li><a class="dropdown-item" href="pembelajaran3.html">Pembelajaran 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="penutup.html">Penutup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CP Section -->
+  <section class="section-content px-3">
+    <div class="d-flex flex-column flex-md-row align-items-center">
+      <!-- Kolom teks -->
+      <div class="flex-grow-1">
+        <h2 class="text-center animate__animated animate__fadeInDown">
+          Capaian Pembelajaran (CP)
+        </h2>
+        <div class="card p-4 animate__animated animate__fadeInUp mt-3 mt-md-0">
+          <h5 class="card-title">Capaian Pembelajaran</h5>
+          <p class="card-text">
+            Pada akhir fase D, peserta didik dapat menyelesaikan masalah kontekstual peserta didik  
+            dengan menggunakan konsep-konsep dan keterampilan matematika yang dipelajari pada fase  
+            ini. Di akhir fase D peserta didik dapat menjelaskan cara untuk menentukan luas lingkaran dan 
+            menyelesaikan masalah yang terkait.
+          </p>
+        </div>
+      </div>
+
+      <!-- Kolom animasi -->
+      <div class="mt-4 mt-md-0 ms-md-4 text-center">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player
+          src="https://lottie.host/3b3d9db1-f31c-4120-b361-e9b810be1563/neM8G8bSwA.lottie"
+          background="transparent"
+          speed="1"
+          style="width: 250px; height: 250px;"
+          loop autoplay>
+        </dotlottie-player>
+      </div>
+    </div>
+  </section>
+
+  <!-- TP Section -->
+  <section class="section-content px-3">
+    <h2 class="text-center animate__animated animate__fadeInDown">Tujuan Pembelajaran (TP)</h2>
+
+    <div class="row align-items-center g-0">
+      <!-- Animasi di kiri -->
+      <div class="col-md-4 text-center mt-4 mt-md-0">
+        <dotlottie-player 
+          src="https://lottie.host/c4ee1793-a00b-4999-82af-ae23d18d9f5f/hTI1oE4EmT.lottie" 
+          background="transparent" 
+          speed="1" 
+          style="width: 100%; max-width: 300px; height: auto;" 
+          loop autoplay>
+        </dotlottie-player>
+      </div>
+
+      <!-- Kartu TP di kanan -->
+      <div class="col-md-8">
+        <div class="p-3">
+          <div class="card p-4 mb-3 animate__animated animate__fadeInUp">
+            <h5 class="card-title">TP 1</h5>
+            <p class="card-text">Peserta didik dapat memahami pengertian lingkaran</p>
+          </div>  
+
+          <div class="card p-4 mb-3 animate__animated animate__fadeInUp">
+            <h5 class="card-title">TP 2</h5>
+            <p class="card-text">Peserta didik dapat menjelaskan unsur-unsur atau bagian lingkaran</p>
+          </div>
+
+          <div class="card p-4 mb-3 animate__animated animate__fadeInUp">
+            <h5 class="card-title">TP 3</h5>
+            <p class="card-text">Peserta didik dapat menjelaskan cara untuk menentukan keliling lingkaran</p>
+          </div>
+
+          <div class="card p-4 mb-3 animate__animated animate__fadeInUp">
+            <h5 class="card-title">TP 4</h5>
+            <p class="card-text">Peserta didik dapat menjelaskan cara untuk menentukan luas lingkaran</p>
+          </div>
+
+          <div class="card p-4 animate__animated animate__fadeInUp">
+            <h5 class="card-title">TP 5</h5>
+            <p class="card-text">Peserta didik dapat menyelesaikan masalah yang terkait dengan luas lingkaran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tombol Navigasi -->
+      <div class="d-flex justify-content-between mt-5">
+        <a href="index.html" class="btn btn-light">← Sebelumnya</a>
+        <a href="peta-konsep.html" class="btn btn-light">Selanjutnya →</a>
+      </div>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1 fw-bold">MathCircleFun © 2025</p>
+      <p class="mb-0">Dibuat untuk pembelajaran matematika topik Lingkaran - SMP</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

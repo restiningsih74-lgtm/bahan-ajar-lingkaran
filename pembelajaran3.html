@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pembelajaran 3 - Busur, Juring, dan Tembereng</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #2B4D5F, #2F6E78);
+      color: white;
+    }
+
+    .custom-navbar {
+      background-color: #2B4D5F;
+    }
+
+    .dropdown-menu {
+      background-color: #2B4D5F;
+    }
+
+    .dropdown-menu a.dropdown-item {
+      color: white;
+    }
+
+    .dropdown-menu a.dropdown-item:hover {
+      background-color: #3a697a !important;
+    }
+
+    .section-content {
+      padding-top: 140px;
+      padding-bottom: 50px;
+    }
+
+    .card {
+      background-color: #3a697a;
+      color: white;
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .lottie-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">MathCircleFun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="cp-tp.html">CP dan TP</a></li>
+          <li class="nav-item"><a class="nav-link" href="peta-konsep.html">Peta Konsep</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Materi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="pembelajaran1.html">Pembelajaran 1</a></li>
+              <li><a class="dropdown-item" href="pembelajaran2.html">Pembelajaran 2</a></li>
+              <li><a class="dropdown-item" href="pembelajaran3.html">Pembelajaran 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="penutup.html">Penutup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten Pembelajaran 3 -->
+  <section class="section-content">
+    <div class="container">
+      <h2 class="text-center animate__animated animate__fadeInDown mb-4">Pembelajaran 3: Busur, Juring, dan Tembereng</h2>
+
+      <div class="flex-container">
+       <!-- Gambar Unsur -->
+    <img src="Gambar/unsur.jpg" alt="Ilustrasi Pizza"
+         class="img-fluid rounded shadow-sm" style="max-width: 400px; height: auto;" />
+
+        <div class="card p-3">
+          <h5 class="card-title">Tujuan Pembelajaran</h5>
+          <ul>
+            <li>Memahami pengertian busur, juring, dan tembereng pada lingkaran</li>
+            <li>Dapat menggambarkan dan menunjukkan bagian-bagian tersebut</li>
+            <li>Mampu menggunakan konsep busur, juring, dan tembereng dalam soal nyata</li>
+          </ul>
+        </div>
+      </div>
+   <!-- Pertanyaan Pemantik -->
+<div class="card p-3 mt-3 animate__animated animate__fadeInUp">
+  <h5 class="card-title">🍕🔍 Yuk, Amati dan Pikirkan!</h5>
+  <p>Pernahkah kamu memperhatikan bentuk potongan pizza saat akan disantap, atau melihat irisan semangka saat disajikan?</p>
+  <p>Sebenarnya, potongan-potongan itu menyimpan bentuk-bentuk bangun datar yang sedang kamu pelajari, lho!</p>
+
+  <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap mt-3">
+    <!-- Gambar Semangka -->
+    <img src="Gambar/semangka.png" alt="Ilustrasi Semangka"
+         class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+         
+    <!-- Gambar Pizza -->
+    <img src="Gambar/piza.png" alt="Ilustrasi Pizza"
+         class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+  </div>
+</div>
+
+<!-- Penjelasan Visual dan Konsep -->
+<div class="text-center mt-4">
+  <p><strong>Bayangkan kamu memotong pizza menjadi beberapa bagian...</strong></p>
+  <p>Setiap potongan menunjukkan bagian dari lingkaran yang bisa disebut <em>juring</em>, <em>busur</em>, atau bahkan <em>tembereng</em>. Yuk kita kenali satu per satu!</p>
+  
+  <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap mt-3">
+    <!-- Gambar Pizza -->
+    <img src="Gambar/pisa.jpg" alt="Ilustrasi Semangka"
+         class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+
+  <ul class="text-start d-inline-block text-left">
+    <li><strong>Juring</strong>: potongan pizza berbentuk segitiga dari tengah ke tepi.</li>
+    <li><strong>Busur</strong>: bagian melengkung di tepi potongan (biasanya bagian roti pinggirnya).</li>
+    <li><strong>Tembereng</strong>: area yang dibatasi oleh sebuah busur dan garis lurus (tali busur).</li>
+  </ul>
+</div>
+
+<!-- Penjelasan Materi Lingkaran -->
+<div class="materi mt-5">
+
+  <!-- Busur -->
+  <div class="mb-5 p-3 rounded shadow-sm border animate__animated animate__fadeInUp">
+    <h3>1. 🎯 Apa Itu Busur?</h3>
+    <p>Bayangkan kamu menggambar sebuah garis lengkung di pinggiran lingkaran. Nah, itulah yang disebut <strong>busur</strong>! Busur menghubungkan dua titik pada lingkaran melalui jalur melengkung di tepinya.</p>
+    <!-- GambarBusur -->
+    <img src="Gambar/busur.jpg" alt="Ilustrasi Pizza"
+         class="img-fluid rounded shadow-sm" style="max-width: 200px; height: auto;" />
+    <p class="fst-italic">Contoh: Pinggiran potongan pizza yang melengkung adalah busur!</p>
+	<!-- Gambar Pizza -->
+    <img src="Gambar/pizz.jpg" alt="Ilustrasi Pizza"
+         class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+  </div>
+
+  <!-- Juring -->
+  <div class="mb-5 p-3 rounded shadow-sm border animate__animated animate__fadeInUp animate__delay-1s">
+    <h3>2. 🍰 Apa Itu Juring?</h3>
+    <p>Juring adalah bagian lingkaran yang dibentuk oleh <strong>dua jari-jari</strong> dan <strong>satu busur</strong>. Bentuknya seperti potongan kue tart atau irisan semangka.</p>
+   <!-- Gambar Juring -->
+    <img src="Gambar/juring.jpg" alt="Ilustrasi Pizza"
+         class="img-fluid rounded shadow-sm" style="max-width: 300px; height: auto;" />
+    <p class="fst-italic">Contoh: Irisan pizza dari tengah ke pinggir adalah juring!</p>
+  </div>
+
+  <!-- Tembereng -->
+  <div class="mb-5 p-3 rounded shadow-sm border animate__animated animate__fadeInUp animate__delay-2s">
+    <h3>3. 🌓 Apa Itu Tembereng?</h3>
+    <p>Tembereng adalah area pada lingkaran yang dibatasi oleh <strong>satu busur</strong> dan <strong>satu tali busur</strong> (garis lurus yang menghubungkan dua titik pada lingkaran, tapi tidak dari pusat).</p>
+    <!-- Gambar Tembereng -->
+    <img src="Gambar/tembereng.jpg" alt="Ilustrasi Pizza"
+         class="img-fluid rounded shadow-sm" style="max-width: 300px; height: auto;" />
+    <p class="fst-italic">Contoh: Potongan pinggiran semangka yang tidak menyentuh pusat lingkaran.</p>
+  </div>
+
+</div>
+
+  <!-- Penutup -->
+      <div class="text-center mt-5">
+        <p class="lead">🌟 Yuk lanjutkan mempelajari materi ini melalui contoh-contoh interaktif dan latihan seru! 🌟</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pembelajaran Busur, Juring, dan Tembereng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #5686af;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e7e8e9;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .menu button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: rgb(227, 229, 238);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      background-color: #cbdeeb;
+    }
+
+    .content {
+      background-color: rgb(85, 95, 155);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .diagram {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .diagram svg {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Pembelajaran: Busur, Juring, dan Tembereng</h1>
+
+<div class="menu">
+  <button onclick="showContent('busur')">Busur</button>
+  <button onclick="showContent('juring')">Juring</button>
+  <button onclick="showContent('tembereng')">Tembereng</button>
+</div>
+
+<div class="content" id="content-area">
+  <p>Silakan pilih salah satu topik di atas untuk melihat pembahasan.</p>
+</div>
+
+<script>
+  const contents = {
+    busur: `
+      <h2>Busur</h2>
+      <p>Busur adalah bagian dari keliling lingkaran. Busur bisa berupa busur pendek atau busur panjang tergantung panjangnya terhadap keliling lingkaran.</p>
+      <div class="diagram">
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="90" stroke="#ccc" stroke-width="3" fill="none"/>
+          <path d="M 10 100 A 90 90 0 0 1 190 100" stroke="#e74c3c" stroke-width="5" fill="none"/>
+          <text x="80" y="80" fill="#e74c3c">Busur</text>
+        </svg>
+      </div>
+    `,
+    juring: `
+      <h2>Juring</h2>
+      <p>Juring adalah bagian dari daerah lingkaran yang dibatasi oleh dua jari-jari dan sebuah busur.</p>
+      <div class="diagram">
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="90" stroke="#ccc" stroke-width="3" fill="none"/>
+          <path d="M100,100 L10,100 A90,90 0 0,1 100,10 Z" fill="#2ecc71"/>
+          <text x="60" y="60" fill="#2c3e50">Juring</text>
+        </svg>
+      </div>
+    `,
+    tembereng: `
+      <h2>Tembereng</h2>
+      <p>Tembereng adalah daerah pada lingkaran yang dibatasi oleh busur dan tali busur.</p>
+      <div class="diagram">
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="90" stroke="#ccc" stroke-width="3" fill="none"/>
+          <path d="M 10 100 A 90 90 0 0 1 190 100 L 10 100 Z" fill="#f1c40f"/>
+          <text x="70" y="120" fill="#2c3e50">Tembereng</text>
+        </svg>
+      </div>
+    `
+  };
+
+  function showContent(topic) {
+    document.getElementById('content-area').innerHTML = contents[topic];
+  }
+</script>
+</body>
+
+<!-- Latihan Soal -->
+<div class="card p-4 mt-3">
+  <h5 class="card-title">📝 Latihan Soal</h5>
+  <form id="quizForm">
+    <ol>
+      <li>
+        <p>Sebuah lingkaran dibagi menjadi 8 bagian yang sama besar. Berapakah besar sudut pusat dari satu potong juring tersebut?</p>
+        <ul class="list-unstyled">
+          <li><label><input type="radio" name="soal1" value="A"> A. 30°</label></li>
+          <li><label><input type="radio" name="soal1" value="B"> B. 45°</label></li>
+          <li><label><input type="radio" name="soal1" value="C"> C. 60°</label></li>
+          <li><label><input type="radio" name="soal1" value="D"> D. 90°</label></li>
+        </ul>
+      </li>
+      <li class="mt-3">
+        <p>Bagian dari lingkaran yang dibatasi oleh satu busur dan tali busur disebut…</p>
+        <ul class="list-unstyled">
+          <li><label><input type="radio" name="soal2" value="A"> A. Juring</label></li>
+          <li><label><input type="radio" name="soal2" value="B"> B. Diameter</label></li>
+          <li><label><input type="radio" name="soal2" value="C"> C. Tembereng</label></li>
+          <li><label><input type="radio" name="soal2" value="D"> D. Apotema</label></li>
+        </ul>
+      </li>
+      <li class="mt-3">
+        <p>Perhatikan gambar potongan pizza berikut. Bagian pinggir yang melengkung pada potongan tersebut disebut…</p>
+        <ul class="list-unstyled">
+          <li><label><input type="radio" name="soal3" value="A"> A. Juring</label></li>
+          <li><label><input type="radio" name="soal3" value="B"> B. Tembereng</label></li>
+          <li><label><input type="radio" name="soal3" value="C"> C. Busur</label></li>
+          <li><label><input type="radio" name="soal3" value="D"> D. Tali busur</label></li>
+        </ul>
+      </li>
+    </ol>
+    <div class="text-center mt-4">
+      <button type="button" class="btn btn-success" onclick="cekJawaban()">Cek Jawaban</button>
+    </div>
+  </form>
+  <div id="hasil" class="mt-4 alert alert-info text-center" style="display: none;"></div>
+</div>
+
+<!-- JavaScript untuk Cek Jawaban -->
+<script>
+  function cekJawaban() {
+    const jawabanBenar = {
+      soal1: "D",  // 360° / 8 = 45°
+      soal2: "C",  // Tembereng
+      soal3: "C"   // Busur
+    };
+
+    let skor = 0;
+    let total = 3;
+    let hasil = "";
+
+    for (let i = 1; i <= total; i++) {
+      const nama = "soal" + i;
+      const pilihan = document.querySelector(`input[name="${nama}"]:checked`);
+      if (pilihan) {
+        if (pilihan.value === jawabanBenar[nama]) {
+          skor++;
+        }
+      }
+    }
+
+    hasil = `Kamu mendapatkan skor: <strong>${skor} dari ${total}</strong>`;
+    const hasilDiv = document.getElementById("hasil");
+    hasilDiv.innerHTML = hasil;
+    hasilDiv.style.display = "block";
+  }
+</script>
+<!-- Hasil Skor & Pembahasan -->
+<div id="hasil" class="mt-4 alert alert-info text-center" style="display: none;"></div>
+<div id="pembahasan" class="mt-3" style="display: none;">
+  <h6><strong>📘 Pembahasan:</strong></h6>
+  <ol id="daftarPembahasan" class="mt-2"></ol>
+</div>
+
+<!-- JavaScript untuk Cek Jawaban dan Pembahasan -->
+<script>
+  function cekJawaban() {
+    const jawabanBenar = {
+      soal1: "D", // 360° / 8 = 45°
+      soal2: "C", // Tembereng
+      soal3: "C"  // Busur
+    };
+
+    const pembahasan = {
+      soal1: "Satu lingkaran penuh adalah 360°. Jika dibagi 8 bagian sama besar, maka sudut pusat tiap juring adalah 360° ÷ 8 = <strong>45°</strong>.",
+      soal2: "Tembereng adalah daerah yang dibatasi oleh sebuah busur dan tali busur, bukan dari pusat. Jadi jawabannya <strong>Tembereng</strong>.",
+      soal3: "Bagian lengkung di pinggir lingkaran disebut <strong>busur</strong>. Jadi lengkungan di potongan pizza itu adalah busur."
+    };
+
+    let skor = 0;
+    let total = 3;
+    let hasil = "";
+    let pembahasanList = "";
+
+    for (let i = 1; i <= total; i++) {
+      const nama = "soal" + i;
+      const pilihan = document.querySelector(`input[name="${nama}"]:checked`);
+      if (pilihan) {
+        if (pilihan.value === jawabanBenar[nama]) {
+          skor++;
+        }
+      }
+      pembahasanList += `<li>${pembahasan[nama]}</li>`;
+    }
+
+    // Tampilkan skor
+    hasil = `Kamu mendapatkan skor: <strong>${skor} dari ${total}</strong>`;
+    const hasilDiv = document.getElementById("hasil");
+    hasilDiv.innerHTML = hasil;
+    hasilDiv.style.display = "block";
+
+    // Tampilkan pembahasan
+    const pembahasanDiv = document.getElementById("pembahasan");
+    const daftarPembahasan = document.getElementById("daftarPembahasan");
+    daftarPembahasan.innerHTML = pembahasanList;
+    pembahasanDiv.style.display = "block";
+  }
+</script>
+
+<!-- Tombol Navigasi -->
+      <div class="d-flex justify-content-between mt-5">
+        <a href="pembelajaran2.html" class="btn btn-light">← Sebelumnya</a>
+        <a href="penutup.html" class="btn btn-light">Selanjutnya →</a>
+      </div>
+
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1 fw-bold">MathCircleFun © 2025</p>
+      <p class="mb-0">Dibuat untuk pembelajaran matematika topik Lingkaran - SMP</p>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+
+

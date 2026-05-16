@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pembelajaran1- Lingkaran</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #2B4D5F, #2F6E78);
+      color: white;
+    }
+
+    .custom-navbar {
+      background-color: #2B4D5F;
+    }
+
+    .dropdown-menu {
+      background-color: #2B4D5F;
+    }
+
+    .dropdown-menu a.dropdown-item {
+      color: white;
+    }
+
+    .dropdown-menu a.dropdown-item:hover {
+      background-color: #3a697a !important;
+    }
+
+    .section-content {
+      padding-top: 140px;
+      padding-bottom: 50px;
+    }
+    .section-content h2 {
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: #3a697a;
+      color: white;
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+    .flex-container, .lottie-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    dotlottie-player {
+      display: inline-block !important;
+    }
+
+  </style>
+
+</head>
+<body>
+  <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">MathCircleFun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="cp-tp.html">CP dan TP</a></li>
+          <li class="nav-item"><a class="nav-link" href="peta-konsep.html">Peta Konsep</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Materi</a> 
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="pembelajaran1.html">Pembelajaran 1</a></li>
+              <li><a class="dropdown-item" href="pembelajaran2.html">Pembelajaran 2</a></li>
+              <li><a class="dropdown-item" href="pembelajaran3.html">Pembelajaran 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="penutup.html">Penutup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <section class="section-content">
+    <div class="container">
+      <h2 class="text-center animate__animated animate__fadeInDown mb-4">Pembelajaran 1: Pengenalan Lingkaran</h2>
+
+      <!-- Animasi dan Tujuan -->
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<div class="flex-container">
+  <dotlottie-player 
+    src="https://lottie.host/d4796084-798e-4767-b477-ba860ab01bd7/JOamnD7jOf.lottie" 
+    background="transparent" 
+    speed="0.5" 
+    style="width: 300px; height: 300px" 
+    loop autoplay>
+  </dotlottie-player>
+
+  <div class="card p-4">
+    <h5 class="card-title">Tujuan Pembelajaran</h5>
+    <ul>
+      <li>Peserta didik dapat memahami konsep lingkaran</li>
+      <li>Peserta didik mengidentifikasi unsur-unsur lingkaran</li>
+      <li>Peserta didik menjelaskan perbedaan antar unsur lingkaran</li>
+    </ul>
+  </div>
+</div>
+<div class="card p-4">
+   <h2 class="card-title text-center">Pendahuluan</h2>
+   <div class="container mt-4" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <img src="Gambar/sepeda.png" 
+       alt="sepeda" 
+       class="img-fluid concept-image animate__animated animate__fadeInUp" 
+       style="max-width: 200px; width: 100%;">
+
+  <img src="Gambar/jam1.png" 
+       alt="jam" 
+       class="img-fluid concept-image animate__animated animate__fadeInUp" 
+       style="max-width: 200px; width: 100%;">
+
+  <img src="Gambar/piring..png" 
+       alt="piring" 
+       class="img-fluid concept-image animate__animated animate__fadeInUp" 
+       style="max-width: 200px; width: 100%;">
+</div>
+
+     <p style="text-align: justify;"></p>Pernahkah kamu memperhatikan bentuk jam dinding, roda sepeda, atau pirin? Semuanya punya bentuk yang sama—lingkaran!
+      Lingkaran adalah salah satu bentuk paling sering kita temui dalam kehidupan sehari-hari. Tapi, tahukah kamu apa sebenarnya lingkaran itu?</p>
+     <p style="text-align: justify;"></p>Dalam matematika, kita tidak hanya mengenal bentuknya saja, tapi juga perlu memahami bagian-bagian penting dari lingkaran, seperti titik pusat, jari-jari, diameter, dan lainnya.
+Nah, lewat artikel ini, kamu akan mempelajari pengertian lingkaran dan unsur-unsur penyusunnya dengan cara yang sederhana dan mudah dipahami.</p>
+     </div>
+
+    <div class="card p-4">
+  <h3 class="card-title text-center">
+    Sekarang, yuk kita amati salah satu dari benda tersebut — misalnya roda sepeda!
+  </h3>
+
+  <!-- Kontainer horizontal -->
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+
+  <!-- Gambar di kiri -->
+  <div style="flex: 1 1 200px; display: flex; justify-content: center;">
+    <img src="Gambar/rodasepeda.png" 
+         alt="roda sepeda" 
+         class="img-fluid concept-image animate__animated animate__fadeInUp" 
+         style="width: 220px; max-width: 100%; height: auto;">
+  </div>
+
+  <!-- Teks di kanan -->
+  <div style="flex: 2 1 300px;">
+    <p class="card-title">Perhatikan gambar roda sepeda di samping</p>
+
+    <p style="text-align: justify;">
+      Bentuknya bulat sempurna, bukan? Nah, bentuk bulat itu dalam matematika disebut <strong>lingkaran</strong>.
+    </p>
+
+    <p style="text-align: justify;">
+      Lihat bagian tengah roda — tempat semua jeruji bertemu. Titik itu disebut <strong>titik pusat</strong>.
+      Sekarang perhatikan jeruji-jeruji yang menyebar dari pusat ke pinggir roda. Semua jeruji itu panjangnya sama.
+    </p>
+
+    <div class="highlight" style="text-align: justify;">
+      Jeruji dari pusat ke tepi roda itulah yang disebut <strong>jari-jari lingkaran</strong>.
+    </div>
+
+    <p style="text-align: justify;">
+      Jadi dari roda sepeda kita bisa belajar, bahwa:
+    </p>
+
+    <ul>
+      <li><strong>Lingkaran</strong> adalah kumpulan titik-titik yang letaknya sama jauh dari titik pusat.</li>
+      <li><strong>Jari-jari</strong> adalah garis dari titik pusat ke tepi lingkaran.</li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+ <div class="card p-4">
+  <h2 class="card-title text-center" style="margin-bottom:0px;">Jadi, Apa itu lingkaran?</h2>
+
+  <!-- Load Lottie player -->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+  <!-- Kontainer flex -->
+  <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+    <!-- Animasi Lottie -->
+    <dotlottie-player 
+      src="https://lottie.host/819ddaea-3c39-4312-b16f-294ff35e2e73/rM9736AQxg.lottie"
+      background="transparent"
+      speed="1"
+      style="width: 250px; height: 300px"
+      loop autoplay>
+    </dotlottie-player>
+
+    <!-- Paragraf -->
+    <p style="max-width: 735px; text-align: justify; margin-top: 0;">
+      Lingkaran adalah kumpulan titik-titik di suatu bidang datar yang berjarak sama dari satu titik tetap di tengahnya.
+      Titik tetap itu disebut pusat lingkaran, dan jarak dari pusat ke titik mana pun di tepi lingkaran disebut jari-jari.
+      Bayangkan kamu menancapkan ujung pena di satu titik, lalu memutar tali yang diikatkan pada pena dengan panjang tetap.
+      Titik-titik yang kamu lewati saat memutar itulah yang membentuk lingkaran!
+    </p>
+  </div>
+</div>
+
+
+<div class="card p-4"><h2 style="text-align: center; margin-bottom: 20px;">Putar Pena Membentuk Lingkaran</h2>
+<p style="text-align: center;">Geser pena di bawah ini dan lihatlah, Bahwa apapun posisi titiknya, jaraknya ke pusat akan selalu sama.</p>
+<div style="display: flex; justify-content: center;">
+  <svg  id="svgCanvas" width="400" height="400" viewBox="0 0 400 400">
+  <!-- Lingkaran -->
+  <circle cx="200" cy="200" r="120" stroke="#4FC3F7" stroke-width="3" fill="none" />
+
+  <!-- Titik pusat -->
+  <circle cx="200" cy="200" r="5" fill="black" />
+  <text x="210" y="195" font-size="14" fill="black">Titik pusat</text>
+
+  <!-- Tali -->
+  <line id="tali" x1="200" y1="200" x2="320" y2="200"
+        stroke="orange" stroke-width="3" stroke-dasharray="5,5" />
+
+  <!-- Pena -->
+  <circle id="pena" cx="320" cy="200" r="8" fill="darkred" cursor="pointer" />
+  <text id="labelPena" x="325" y="195" font-size="14" fill="darkred">Pena</text>
+</svg>
+</div>
+
+<script>
+  const svg = document.getElementById("svgCanvas");
+  const pena = document.getElementById("pena");
+  const tali = document.getElementById("tali");
+  const label = document.getElementById("labelPena");
+
+  const centerX = 200;
+  const centerY = 200;
+  const radius = 120;
+
+  let isDragging = false;
+
+  // --- Desktop Events ---
+  svg.addEventListener("mousedown", startDrag);
+  svg.addEventListener("mousemove", onDrag);
+  svg.addEventListener("mouseup", endDrag);
+  svg.addEventListener("mouseleave", endDrag);
+
+  // --- Mobile Events ---
+  svg.addEventListener("touchstart", startDrag);
+  svg.addEventListener("touchmove", onDrag);
+  svg.addEventListener("touchend", endDrag);
+  svg.addEventListener("touchcancel", endDrag);
+
+  function getEventPos(e) {
+    if (e.touches && e.touches.length > 0) {
+      return {
+        x: e.touches[0].clientX,
+        y: e.touches[0].clientY
+      };
+    } else {
+      return {
+        x: e.clientX,
+        y: e.clientY
+      };
+    }
+  }
+
+  function startDrag(e) {
+    const pos = getEventPos(e);
+    const rect = svg.getBoundingClientRect();
+    const mouseX = pos.x - rect.left;
+    const mouseY = pos.y - rect.top;
+
+    const penaX = parseFloat(pena.getAttribute("cx"));
+    const penaY = parseFloat(pena.getAttribute("cy"));
+
+    const distance = Math.hypot(mouseX - penaX, mouseY - penaY);
+
+    if (distance < 15) {
+      isDragging = true;
+      e.preventDefault(); // cegah scroll di mobile
+    }
+  }
+
+  function onDrag(e) {
+    if (!isDragging) return;
+
+    const pos = getEventPos(e);
+    const rect = svg.getBoundingClientRect();
+    const mouseX = pos.x - rect.left;
+    const mouseY = pos.y - rect.top;
+
+    const dx = mouseX - centerX;
+    const dy = mouseY - centerY;
+
+    const angle = Math.atan2(dy, dx);
+
+    const newX = centerX + radius * Math.cos(angle);
+    const newY = centerY + radius * Math.sin(angle);
+
+    pena.setAttribute("cx", newX);
+    pena.setAttribute("cy", newY);
+
+    tali.setAttribute("x2", newX);
+    tali.setAttribute("y2", newY);
+
+    label.setAttribute("x", newX + 5);
+    label.setAttribute("y", newY - 5);
+
+    e.preventDefault(); // cegah scroll di mobile saat drag
+  }
+
+  function endDrag(e) {
+    isDragging = false;
+  }
+</script>
+<p> Nama lingkaran biasanya sesuai dengan nama 
+titik pusatnya. Pada gambar di samping contoh 
+bentuk lingkaran dengan pusat titik P, bisa disebut 
+lingkaran P. Jarak yang tetap antara titik pada 
+lingkaran dengan pusat lingkaran dinamakan jari
+jari, biasanya disimbolkan r.</p>
+<div style="display: flex; justify-content: center;">
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lingkaran -->
+  <circle cx="200" cy="200" r="150" stroke="orange" stroke-width="6" fill="none" />
+
+  <!-- Titik pusat -->
+  <circle cx="200" cy="200" r="8" fill="#d2b48c" />
+
+  <!-- Garis jari-jari sangat dekat ke tepi -->
+  <line x1="200" y1="200" x2="90" y2="310" stroke="#d2b48c" stroke-width="4" />
+
+  <!-- Label r -->
+  <text x="115" y="280" fill="#d2b48c" font-size="22" font-family="serif">r</text>
+
+  <!-- Label P -->
+  <text x="215" y="210" fill="orange" font-size="24" font-family="serif" font-style="italic">P</text>
+</svg>
+</div>
+<div style="
+  border-left: 6px solid #ffc107; 
+  background-color: #459cbe94; 
+  padding: 15px 20px; 
+  margin: 20px 0; 
+  border-radius: 8px; 
+  display: flex; 
+  align-items: flex-start; 
+  gap: 12px;
+  font-size: 16px;
+">
+  <div style="font-size: 20px;">🔍</div>
+  <div>
+    <strong>Istilah Penting:</strong><br>
+    <strong>Titik pusat</strong>: Titik di tengah lingkaran tempat semua titik lainnya berjarak sama.<br>
+    Jarak tetap dari titik pusat ke tepi lingkaran disebut <strong>jari-jari</strong> (radius).
+  </div>
+</div>
+</div>
+
+<div class="card p-4"><h2 style="text-align: center; margin-bottom: 20px;">Unsur-unsur Lingkaran</h2>
+  <p>setelah kita memahami konsep lingkaran, selanjutnya kita perlu mengenal bagian-bagian yang ada dalam lingkaran. Bagian-bagian ini disebut sebagai unsur-unsur lingkaran. Mari kita pelajari satu per satu.</p>
+  <div class="card p-4" style="background-color: #459cbe94;">
+    <strong style="text-align: center;">Unsur-unsur lingkaran:</strong>
+    <ul style="margin: 10px 0 0 20px;">
+      <li><strong>Titik pusat: </strong>Titik pusat adalah titik yang berada di tengah lingkaran dan memiliki jarak yang sama ke seluruh tepi lingkaran. Semua jari-jari berawal dari titik ini.
+        Contohnya seperti poros pada jam dinding. Semua jarum berputar dari titik ini.</li>
+      
+      <br><li><strong>Jari-jari</strong>: Jari-jari adalah garis dari titik pusat lingkaran ke tepinya. misalnya Pada jam dinding, <strong>jarum jam</strong> bisa dianggap sebagai jari-jari, karena memanjang dari pusat ke angka di tepi.</p>
+         <p style="text-align: center; font-size: 14px; font-style: italic; color: #d8d1d1;">Klik dan seret jarum jam untuk memutarnya</p>
+         <style>
+    .lingkaran {
+      width: 200px;
+      height: 200px;
+      border: 3px solid #333;
+      border-radius: 50%;
+      position: relative;
+      margin: 40px auto;
+      touch-action: none;
+      background: radial-gradient(circle, transparent 89px, #ccc 90px, transparent 91px); /* garis acuan jangkauan jarum */
+    }
+
+    .pusat {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+
+    .jarum {
+      width: 2px;
+      height: 100px; /* panjang jarum = radius lingkaran */
+      background-color: blue;
+      position: absolute;
+      top: 0; /* mulai dari pusat */
+      left: 50%;
+      transform: translateX(-50%) rotate(0deg);
+      transform-origin: bottom center;
+      z-index: 4;
+      cursor: grab;
+    }
+
+    .jarum::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 10px solid blue;
+    }
+
+    .angka {
+      position: absolute;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .angka-12 { top: -20px; left: 50%; transform: translateX(-50%); }
+    .angka-3 { right: -20px; top: 50%; transform: translateY(-50%); }
+    .angka-6 { bottom: -20px; left: 50%; transform: translateX(-50%); }
+    .angka-9 { left: -20px; top: 50%; transform: translateY(-50%); }
+  </style>
+</head>
+<body>
+
+  <div class="lingkaran" id="jam">
+    <div class="pusat"></div>
+    <div class="jarum" id="jarum"></div>
+    <div class="angka angka-12">12</div>
+    <div class="angka angka-3">3</div>
+    <div class="angka angka-6">6</div>
+    <div class="angka angka-9">9</div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const jarum = document.getElementById('jarum');
+      const jam = document.getElementById('jam');
+
+      let isDragging = false;
+
+      function updateAngle(x, y) {
+        const rect = jam.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const dx = x - centerX;
+        const dy = y - centerY;
+
+        const angle = Math.atan2(dx, -dy) * (180 / Math.PI);
+        jarum.style.transform = `translateX(-50%) rotate(${angle}deg)`;
+      }
+
+      // Mouse
+      jarum.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        e.preventDefault();
+      });
+
+      document.addEventListener('mousemove', (e) => {
+        if (isDragging) updateAngle(e.clientX, e.clientY);
+      });
+
+      document.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+
+      // Touch
+      jarum.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        e.preventDefault();
+      });
+
+      document.addEventListener('touchmove', (e) => {
+        if (isDragging && e.touches.length === 1) {
+          updateAngle(e.touches[0].clientX, e.touches[0].clientY);
+        }
+      });
+
+      document.addEventListener('touchend', () => {
+        isDragging = false;
+      });
+    });
+  </script>
+
+
+  <p style="text-align: center;">Titik merah = titik pusat jam = titik pusat
+   <br> Garis biru = jarum jam = jari-jari</p></li>
+
+      <li><strong>Diameter: </strong>Diameter adalah garis lurus dari satu sisi lingkaran ke sisi lainnya yang melewati titik pusat. Misalnya Pada pizza, diameter adalah irisan penuh dari ujung ke ujung yang membelah pizza menjadi dua bagian sama besar.
+        <br> Rumus: diameter = 2 × jari-jari atau d = 2r</li>
+      
+   <br><li><strong>Busur: </strong>Busur adalah bagian dari keliling lingkaran yang membentuk garis lengkung antara dua titik di tepinya. Busur terbagi menjadi dua jenis, yaitu busur mayor dan busur minor. Busur yang panjang disebut <strong>busur mayor</strong> (lebih dari setengah lingkaran). Busur yang pendek disebut <strong>busur minor</strong> (kurang dari setengah lingkaran). </li>
+   <br><li><strong>Tali busur: </strong>Tali busur adalah garis lurus yang menghubungkan dua titik pada keliling lingkaran,<strong> namun tidak harus melalui titik pusat.</strong> Jadi, bisa dibilang tali busur mirip seperti diameter, tetapi tidak selalu membelah lingkaran menjadi dua bagian yang sama besar.</li>
+   <br><li><strong>Juring: </strong>Juring adalah bagian dari lingkaran yang dibatasi oleh <strong>dua jari-jari</strong> dan <strong>busur</strong>. Bentuknya mirip seperti potongan kue tart atau irisan pizza. Kalau kamu menarik dua jari-jari dari titik pusat ke dua titik di tepi lingkaran, dan menghubungkannya dengan bagian lengkung (busur), kamu akan mendapatkan satu juring.</li>
+   <br><li><strong>Tembereng: </strong>Tembereng adalah bagian dari lingkaran yang dibatasi oleh sebuah <strong> tali busur</strong> dan <strong>busur</strong>. Berbeda dengan juring yang dibatasi dua jari-jari dan satu busur, tembereng tidak harus melibatkan titik pusat.</li>   
+   <br><li><strong>Apotema: </strong>Apotema adalah <strong>garis tegak lurus</strong> yang ditarik dari <strong>titik pusat lingkaran ke tengah-tengah sebuah tali busur</strong>. Garis ini selalu membentuk sudut siku-siku (90°) dengan tali busur.</li>   
+  </ul>
+  </div>
+</div>
+<style>
+ .list-unsur {
+      width: 250px;
+    }
+
+    .list-unsur button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .glow {
+      stroke: red;
+      stroke-width: 3;
+      fill: rgba(255, 0, 0, 0.2);
+      filter: drop-shadow(0 0 5px red);
+    }
+
+.unsur-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.svg-area {
+  padding: 10px;
+  margin-top: 75px;
+}
+.containerpizza {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+  </style>
+
+  <!-- 🟠 Daftar Unsur -->
+   <div class="containerpizza">
+  <div class="list-unsur">
+    <h3 style="text-align: center;">Unsur Lingkaran</h3>
+    <button onclick="tampilkan('titikPusat')">Titik Pusat</button>
+    <button onclick="tampilkan('jariJari')">Jari-jari</button>
+    <button onclick="tampilkan('diameter')">Diameter</button>
+    <button onclick="tampilkan('busurMinor')">Tampilkan Busur Minor</button>
+    <button onclick="tampilkan('busurMayor')">Tampilkan Busur Mayor</button>
+    <button onclick="tampilkan('taliBusur')">Tali Busur</button>
+    <button onclick="tampilkan('juring')">Juring</button>
+    <button onclick="tampilkan('tembereng')">Tembereng</button>
+    <button onclick="tampilkan('apotema')">Apotema</button>
+  </div>
+  <!-- 🍕 SVG Pizza Interaktif -->
+   <div class="svg-area">
+    <h4 style="text-align: center;">Tekan tombol unsur di samping untuk menampilkan ilustrasi pada lingkaran.</h4>
+     <svg id="svgPizza" width="400" height="400">
+  <!-- Pizza -->
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#d39b23" stroke-width="5"/>
+
+  <!-- Titik Pusat -->
+  <circle id="titikPusat" cx="200" cy="200" r="5" fill="red" visibility="hidden"/>
+
+  <!-- Jari-jari -->
+  <line id="jariJari" x1="200" y1="200" x2="200" y2="50" stroke="black" stroke-width="3" visibility="hidden"/>
+
+  <!-- Diameter -->
+  <line id="diameter" x1="50" y1="200" x2="350" y2="200" stroke="blue" stroke-width="3" visibility="hidden"/>
+
+  <!-- Busur (bagian atas lingkaran) -->
+  <!-- Busur: lengkung atas dari kiri ke kanan di tepi lingkaran -->
+<path id="busurMinor" d="M 350 200 A 150 150 0 0 0 200 50" stroke="blue" stroke-width="3" fill="none" visibility="hidden" />
+
+  <!-- Busur mayor: 270° -->
+ <path id="busurMayor" d="M 350 200 A 150 150 0 1 1 200 50" stroke="blue" stroke-width="3" fill="none" visibility="hidden" />
+  <!-- Titik A dan B -->
+
+  <!-- Tali Busur (garis lurus dari ujung busur) -->
+  <line id="taliBusur" x1="350" y1="200" x2="200" y2="50" stroke="green" stroke-width="3" visibility="hidden" />
+
+  <!-- Juring (2 jari-jari + busur) -->
+  <path id="juring" d="M 200 200 L 200 50 A 150 150 0 0 1 350 200 Z"
+      fill="rgba(255, 100, 100, 0.5)" visibility="hidden" />
+
+  <!-- Tembereng (busur + tali busur) -->
+  <path id="tembereng"
+      d="M 125 70 A 150 150 0 0 1 275 70 L 125 70 Z"
+      fill="rgba(100, 255, 100, 0.5)"
+      visibility="hidden"/>
+  <!-- Apotema (garis tegak lurus dari pusat ke tengah tali busur) -->
+  <line id="apotema" x1="200" y1="200" x2="282.5" y2="130" stroke="red" stroke-width="3" visibility="hidden" />
+  <path id="sikuKanan" d="M 280.5 130.5 h 4 v -4" 
+      stroke="black" 
+      stroke-width="2" 
+      fill="none" 
+      transform="rotate(45 273.5 130.5)" 
+      visibility="hidden"/>
+
+      
+<g id="topping" visibility="hidden">
+    <!-- Cipratan saus -->
+    <path d="M 230 150 Q 240 140 250 150 Q 240 160 230 150" fill="tomato" />
+    <path d="M 180 250 Q 185 240 195 250 Q 185 260 180 250" fill="tomato" />
+    <circle cx="200" cy="200" r="150" fill="tomato" />
+    <circle cx="245" cy="215" r="7" fill="tomato" />
+    
+    <!-- Topping tambahan atas -->
+    <circle cx="180" cy="120" r="5" fill="brown" />
+    <circle cx="240" cy="160" r="5" fill="brown" />
+    <circle cx="210" cy="200" r="5" fill="brown" />
+    <circle cx="270" cy="130" r="5" fill="brown" />
+    <circle cx="160" cy="170" r="5" fill="brown" />
+    <circle cx="190" cy="150" r="4" fill="green" />
+    <circle cx="220" cy="180" r="4" fill="green" />
+    <circle cx="200" cy="140" r="4" fill="red" />
+    <circle cx="250" cy="150" r="4" fill="red" />
+    <circle cx="230" cy="120" r="4" fill="orange" />
+    <circle cx="170" cy="200" r="4" fill="orange" />
+    <circle cx="150" cy="140" r="4" fill="red" />
+    <circle cx="260" cy="190" r="4" fill="green" />
+    <circle cx="280" cy="170" r="4" fill="brown" />
+    
+    <!-- Topping tambahan bawah pizza -->
+    <circle cx="200" cy="260" r="5" fill="brown" />
+    <circle cx="230" cy="270" r="4" fill="green" />
+    <circle cx="180" cy="250" r="4" fill="red" />
+    <circle cx="220" cy="240" r="5" fill="brown" />
+    <circle cx="250" cy="260" r="4" fill="orange" />
+    <circle cx="170" cy="270" r="4" fill="green" />
+    <circle cx="210" cy="280" r="5" fill="red" />
+    <circle cx="190" cy="230" r="4" fill="orange" />
+    <circle cx="160" cy="250" r="5" fill="brown" />
+    <circle cx="240" cy="290" r="4" fill="green" />
+    
+    <!-- Topping tambahan kanan -->
+    <circle cx="300" cy="180" r="5" fill="brown" />
+    <circle cx="310" cy="200" r="4" fill="green" />
+    <circle cx="290" cy="210" r="4" fill="red" />
+    <circle cx="320" cy="230" r="5" fill="orange" />
+    <circle cx="305" cy="160" r="4" fill="green" />
+    <circle cx="295" cy="240" r="5" fill="brown" />
+    <circle cx="330" cy="190" r="4" fill="red" />
+    <circle cx="310" cy="250" r="5" fill="orange" />
+    
+    <!-- Topping tambahan kiri -->
+    <circle cx="100" cy="180" r="5" fill="brown" />
+    <circle cx="120" cy="160" r="4" fill="green" />
+    <circle cx="110" cy="200" r="4" fill="red" />
+    <circle cx="90" cy="220" r="5" fill="orange" />
+    <circle cx="130" cy="210" r="4" fill="green" />
+    <circle cx="115" cy="240" r="5" fill="brown" />
+    <circle cx="105" cy="190" r="4" fill="red" />
+    <circle cx="125" cy="250" r="5" fill="orange" />
+    
+    <!-- Topping di sisi kiri luar -->
+    <circle cx="70" cy="170" r="4" fill="red" />
+    <circle cx="85" cy="200" r="3" fill="green" />
+    <rect x="65" y="220" width="6" height="6" fill="yellow" transform="rotate(30 68 223)" />
+    <ellipse cx="80" cy="235" rx="5" ry="3" fill="brown" />
+    <polygon points="60,245 64,253 56,253" fill="orange" />
+    <circle cx="90" cy="185" r="4" fill="purple" />
+    
+    <!-- Persegi (keju) -->
+    <rect x="190" y="80" width="8" height="8" fill="yellow" transform="rotate(15 194 84)" />
+    <rect x="220" y="75" width="6" height="6" fill="gold" transform="rotate(-20 223 78)" />
+    
+    <!-- Elips (irisan jamur) -->
+    <ellipse cx="210" cy="95" rx="7" ry="4" fill="saddlebrown" />
+    <ellipse cx="180" cy="90" rx="5" ry="3" fill="sienna" />
+    
+    <!-- Segitiga (paprika) -->
+    <polygon points="160,100 164,108 156,108" fill="green" />
+    <polygon points="240,100 245,107 235,107" fill="limegreen" />
+    
+    <!-- Bentuk tidak biasa (irisan daging) -->
+    <path d="M 200 80 Q 205 88 210 80 Q 215 72 200 80" fill="crimson" />
+    
+    <!-- Persegi kecil (keju) -->
+    <rect x="145" y="85" width="7" height="7" fill="yellow" transform="rotate(10 148.5 88.5)" />
+    
+    <!-- Elips (irisan jamur) -->
+    <ellipse cx="135" cy="95" rx="6" ry="3" fill="saddlebrown" />
+    
+    <!-- Segitiga kecil (paprika hijau) -->
+    <polygon points="120,100 124,107 116,107" fill="green" />
+    
+    <!-- Bentuk acak (irisan daging) -->
+    <path d="M 130 90 Q 135 97 140 90 Q 145 83 130 90" fill="crimson" />
+    <circle cx="245" cy="110" r="4" fill="red" />
+    <circle cx="260" cy="115" r="5" fill="brown" />
+    <ellipse cx="240" cy="100" rx="6" ry="3" fill="sienna" />
+    <rect x="250" y="120" width="5" height="5" fill="gold" transform="rotate(-45 252.5 122.5)" />
+    <polygon points="275,110 270,118 280,118" fill="limegreen" />
+    <path d="M 255 105 Q 260 113 265 105 Q 270 98 255 105" fill="crimson" />
+    
+    <!-- Topping di bagian bawah kiri -->
+    <circle cx="155" cy="290" r="4" fill="red" />
+    <ellipse cx="140" cy="275" rx="6" ry="3" fill="sienna" />
+    <rect x="150" y="285" width="5" height="5" fill="gold" transform="rotate(45 152.5 287.5)" />
+    <polygon points="125,290 130,298 120,298" fill="limegreen" />
+    <path d="M 145 295 Q 150 303 155 295 Q 160 288 145 295" fill="crimson" />
+    
+    <!-- Topping di bagian bawah kanan -->
+    <circle cx="245" cy="290" r="4" fill="red" />
+    <ellipse cx="260" cy="275" rx="6" ry="3" fill="sienna" />
+    <rect x="250" y="285" width="5" height="5" fill="gold" transform="rotate(-45 252.5 287.5)" />
+    <polygon points="275,290 270,298 280,298" fill="limegreen" />
+    <path d="M 255 295 Q 260 303 265 295 Q 270 288 255 295" fill="crimson" />
+    
+    <!-- Topping di bagian bawah tengah -->
+    <circle cx="200" cy="290" r="5" fill="orange" />
+    <rect x="195" y="280" width="10" height="5" fill="purple" rx="2" />
+    <ellipse cx="200" cy="300" rx="6" ry="3" fill="tomato" />
+    <polygon points="195,305 200,312 205,305" fill="seagreen" />
+    <path d="M 190 295 Q 200 305 210 295 Q 200 285 190 295" fill="darkred" />
+    
+    <!-- Topping di jam 10 (atas kiri) -->
+    <circle cx="140" cy="110" r="5" fill="orange" />
+    <rect x="135" y="95" width="10" height="5" fill="purple" rx="2" />
+    <ellipse cx="150" cy="115" rx="6" ry="3" fill="tomato" />
+    <polygon points="135,120 140,127 145,120" fill="seagreen" />
+    <path d="M 130 105 Q 140 115 150 105 Q 140 95 130 105" fill="darkred" />
+</g>
+    </svg>
+   </div>
+  </div>
+  <!-- ✅ JavaScript -->
+  <script>
+    const unsurList = [
+      'titikPusat',
+      'jariJari',
+      'diameter',
+      'busurMinor',
+      'busurMayor',
+      'taliBusur',
+      'juring',
+      'tembereng',
+      'apotema',
+    ];
+
+    function tampilkan(unsurAktif) {
+  const svgPizza = document.getElementById('svgPizza');
+  unsurList.forEach(id => {
+    const elemen = svgPizza.querySelector('#' + id);
+
+    if (unsurAktif === 'apotema' && (id === 'titikPusat' || id === 'taliBusur')) {
+      elemen.setAttribute('visibility', 'visible');
+      elemen.classList.remove('glow'); // bantu visual tanpa efek glow
+    } else if (id === unsurAktif) {
+      elemen.setAttribute('visibility', 'visible');
+      elemen.classList.add('glow');
+    } else {
+      elemen.setAttribute('visibility', 'hidden');
+      elemen.classList.remove('glow');
+    }
+  });
+
+  // Tambahan khusus untuk sikuKanan
+  const sikuKanan = svgPizza.querySelector('#sikuKanan');
+  if (unsurAktif === 'apotema') {
+    sikuKanan.setAttribute('visibility', 'visible');
+  } else {
+    sikuKanan.setAttribute('visibility', 'hidden');
+  }
+    }
+
+  </script>
+  </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+  <div class="card p-4" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <iframe style="max-width:100%" 
+          src="https://wordwall.net/embed/7b52cc1c58ab4abc8fa0fa61b184c385?themeId=1&templateId=5&fontStackId=0" 
+          width="500" 
+          height="380" 
+          frameborder="0" 
+          allowfullscreen>
+  </iframe>
+</div>
+
+  <div>
+    <style>
+  .drop-zone {
+    border: 2px dashed #ccc;
+    min-height: 60px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #222;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .drag-item {
+    touch-action: none;
+    cursor: grab;
+    user-select: none;
+  }
+
+  .drop-zone.correct {
+    background-color: #28a745 !important;
+  }
+
+  .drop-zone.wrong {
+    background-color: #dc3545 !important;
+  }
+</style>
+
+<!-- Suara -->
+<audio id="benarSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+<audio id="salahSound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+
+<!-- Konten Drag-and-Drop -->
+<div class="card p-4 mt-4 animate__animated animate__fadeInUp">
+  <h5 class="card-title">Latihan Drag-and-Drop</h5>
+  <p>Seret nama bagian lingkaran ke kotak yang sesuai.</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div id="drop1" class="drop-zone" data-jawaban="Pusat">➤ Titik tetap yang menjadi pusat lingkaran disebut</div>
+      <div id="drop2" class="drop-zone" data-jawaban="Jari-jari">➤ Garis dari pusat ke tepi disebut </div>
+      <div id="drop3" class="drop-zone" data-jawaban="Diameter">➤ Garis dari satu titik ke titik lainnya di keliling lingkaran dan melewati pusat disebut</div>
+      <div id="drop4" class="drop-zone" data-jawaban="Tali busur">➤ Garis yang menghubungkan dua titik pada keliling lingkaran tanpa melewati pusat disebut </div>
+      <div id="drop5" class="drop-zone" data-jawaban="Busur">➤ Bagian lengkung dari keliling lingkaran antara dua titik disebut  </div>
+    </div>
+
+    <div class="col-md-6" id="dragContainer">
+      <div id="drag2" class="drag-item btn btn-outline-light mb-2" draggable="true">Jari-jari</div>
+      <div id="drag4" class="drag-item btn btn-outline-light mb-2" draggable="true">Tali busur</div>
+      <div id="drag3" class="drag-item btn btn-outline-light mb-2" draggable="true">Diameter</div>
+      <div id="drag5" class="drag-item btn btn-outline-light mb-2" draggable="true">Busur</div>
+      <div id="drag1" class="drag-item btn btn-outline-light mb-2" draggable="true">Pusat</div>
+    </div>
+  </div>
+
+  <button class="btn btn-light mt-3" onclick="cekDrag()">Cek Jawaban</button>
+  <div id="hasilDrag" class="mt-3 fw-bold"></div>
+  <button class="btn btn-outline-light mt-2 ms-2" onclick="resetDrag()">Reset</button>
+</div>
+
+<script>
+  // --- Drag Desktop ---
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    ev.preventDefault();
+    const data = ev.dataTransfer.getData("text");
+    const dragged = document.getElementById(data);
+    const dropTarget = ev.target.closest(".drop-zone");
+    if (dropTarget && !dropTarget.querySelector(".drag-item")) {
+      dropTarget.appendChild(dragged);
+    }
+  }
+
+  // Tambah event listener desktop
+  document.querySelectorAll('.drag-item').forEach(item => {
+    item.addEventListener("dragstart", drag);
+  });
+
+  document.querySelectorAll('.drop-zone').forEach(zone => {
+    zone.addEventListener("dragover", allowDrop);
+    zone.addEventListener("drop", drop);
+  });
+
+  // --- Drag Mobile ---
+  let draggedItem = null;
+
+  document.querySelectorAll(".drag-item").forEach(item => {
+    item.addEventListener("touchstart", function (e) {
+      draggedItem = this;
+      this.style.opacity = "0.6";
+    });
+
+    item.addEventListener("touchend", function (e) {
+      this.style.opacity = "1";
+      const touch = e.changedTouches[0];
+      const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+      if (dropTarget && dropTarget.classList.contains("drop-zone") && !dropTarget.querySelector(".drag-item")) {
+        dropTarget.appendChild(draggedItem);
+      }
+      draggedItem = null;
+    });
+  });
+
+  // --- Cek Jawaban ---
+  function cekDrag() {
+  const benarSound = document.getElementById("benarSound");
+  const salahSound = document.getElementById("salahSound");
+  let benar = 0;
+
+  document.querySelectorAll(".drop-zone").forEach(zone => {
+    const expected = zone.getAttribute("data-jawaban");
+    const isi = zone.textContent;
+
+    if (isi.includes(expected)) {
+      zone.classList.add("correct");
+      setTimeout(() => zone.classList.remove("correct"), 1000);
+      benar++;
+    } else {
+      zone.classList.add("wrong");
+      setTimeout(() => zone.classList.remove("wrong"), 1000);
+    }
+  });
+
+  if (benar === 4) {
+    benarSound.play();
+    // Confetti
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  } else {
+    salahSound.play();
+  }
+
+  document.getElementById("hasilDrag").innerHTML = `✔ Jawaban Benar: ${benar} dari 5`;
+}
+
+  // --- Reset ---
+  function resetDrag() {
+    const dragItems = ["drag1", "drag2", "drag3", "drag4", "drag5"];
+    dragItems.forEach(id => {
+      const item = document.getElementById(id);
+      document.getElementById("dragContainer").appendChild(item);
+    });
+
+    document.getElementById("drop1").innerHTML = "➤ Titik tetap yang menjadi pusat lingkaran disebut ";
+    document.getElementById("drop2").innerHTML = "➤ Garis dari pusat ke tepi disebut";
+    document.getElementById("drop3").innerHTML = "➤ Garis dari satu titik ke titik lainnya di keliling lingkaran dan melewati pusat disebut";
+    document.getElementById("drop4").innerHTML = "➤ Garis yang menghubungkan dua titik pada keliling lingkaran tanpa melewati pusat disebut";
+    document.getElementById("drop5").innerHTML = "➤ Bagian lengkung dari keliling lingkaran antara dua titik disebut";
+    // Set kembali atribut
+    document.getElementById("drop1").setAttribute("data-jawaban", "Pusat");
+    document.getElementById("drop2").setAttribute("data-jawaban", "Jari-jari");
+    document.getElementById("drop3").setAttribute("data-jawaban", "Diameter");
+    document.getElementById("drop4").setAttribute("data-jawaban", "Tali busur");
+    document.getElementById("drop5").setAttribute("data-jawaban", "Busur");
+
+    document.getElementById("hasilDrag").innerHTML = "";
+  }
+</script>
+   </div> 
+
+    <!-- Tombol Navigasi -->
+      <div class="d-flex justify-content-between mt-5">
+        <a href="peta-konsep.html" class="btn btn-light">← Sebelumnya</a>
+        <a href="pembelajaran2.html" class="btn btn-light">Selanjutnya →</a>
+      </div>
+
+   <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1 fw-bold">MathCircleFun © 2025</p>
+      <p class="mb-0">Dibuat untuk pembelajaran matematika topik Lingkaran - SMP</p>
+    </div>
+  </footer>
+  </body>
+  </html>
+
